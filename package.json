@@ -1,0 +1,25 @@
+{
+  "name": "tuiter-node-server-app",
+  "version": "1.0.0",
+  "description": "Node.js HTTP Web Server for the Tuiter Web Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamDaQueen/tuiter-node-server-app.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "REST",
+    "Server",
+    "HTTP"
+  ],
+  "author": "Samreen Reyaz Ansari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamDaQueen/tuiter-node-server-app/issues"
+  },
+  "homepage": "https://github.com/SamDaQueen/tuiter-node-server-app#readme"
+}
