@@ -1,12 +1,31 @@
 import posts from "./tuits.js";
 let tuits = posts;
 
+const currentUser = {
+  userName: "Obi-Wan Kenobi",
+  handle: "ben_kenobi",
+  avatar: "../images/kenobi.jpg",
+};
+
+const templateTuit = {
+  ...currentUser,
+  topic: "Star Wars",
+  title: "The Force Awakens",
+  time: "2h",
+  liked: false,
+  replies: 0,
+  retuits: 0,
+  likes: 0,
+  disliked: false,
+  dislikes: 0,
+};
+
 const createTuit = (req, res) => {
   const newTuit = req.body;
   newTuit._id = new Date().getTime() + "";
   newTuit.likes = 0;
   newTuit.liked = false;
-  tuits.push(newTuit);
+  tuits.unshift({ ...newTuit, ...templateTuit });
   res.json(newTuit);
 };
 const findTuits = (req, res) => res.json(tuits);
